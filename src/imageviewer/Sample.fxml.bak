@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <Accordion layoutX="14.0" layoutY="14.0" prefHeight="372.0">
+      <expandedPane>
+        <TitledPane id="Type" fx:id="accordian" animated="false" text="Type">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </TitledPane>
+      </expandedPane>
+      <panes>
+        <fx:reference source="accordian" />
+        <TitledPane fx:id="properties" animated="false" text="Size and colors">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </TitledPane>
+      </panes>
+    </Accordion>
+    <ImageView fx:id="image" fitHeight="271.25" fitWidth="361.66666666666663" layoutX="225.0" layoutY="15.0" preserveRatio="true" />
+    <Button fx:id="loadButton" layoutX="272.0" layoutY="325.0" mnemonicParsing="false" text="Load" />
+    <Button fx:id="openwithButton" layoutX="429.0" layoutY="325.0" mnemonicParsing="false" text="Open with..." />
+  </children>
+</AnchorPane>
